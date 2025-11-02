@@ -1,0 +1,26 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  VITE_CLERK_PUBLISHABLE_KEY = ""
+  VITE_AZURE_OPENAI_API_KEY = "970587548a234c1f9340a97c513cf5fd"
+  VITE_AZURE_OPENAI_ENDPOINT = "https://ai-movarai650901572824.openai.azure.com"
+  VITE_AZURE_OPENAI_DEPLOYMENT = "o3-mini"
+  VITE_AZURE_OPENAI_EMBEDDING_DEPLOYMENT = "text-embedding-3-large"
+  # Ngrok tunnel URL for local SQLite server
+  VITE_LOCAL_API_URL = "https://2251f1e07320.ngrok-free.app/api"
+
+# Redirect all routes to index.html for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
