@@ -110,11 +110,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
           {/* Logo */}
           <div className="flex items-center mb-6">
             <img
-              src={isDarkMode
-                ? "https://movar-reports.netlify.app/lovable-uploads/5d0a6ccd-eb16-4121-aef0-d583fe0bd181.png"
-                : "https://movar.group/application/files/2517/0442/3523/Movar-Logo-2023-RGB.svg"
-              }
-              alt="Movar Logo"
+              src="/assets/awe-logo.svg"
+              alt="AWE Logo"
               className="h-8 w-auto object-contain"
             />
           </div>

@@ -25,12 +25,9 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = ({ children }) => {
           
           {/* Top Right Controls */}
           <div className="absolute top-8 right-8 flex items-center space-x-6 z-10">
-            <img 
-              src={isDarkMode 
-                ? "https://movar-reports.netlify.app/lovable-uploads/5d0a6ccd-eb16-4121-aef0-d583fe0bd181.png"
-                : "https://movar.group/application/files/2517/0442/3523/Movar-Logo-2023-RGB.svg"
-              }
-              alt="Movar Logo" 
+            <img
+              src="/assets/awe-logo.svg"
+              alt="AWE Logo"
               className="h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-all duration-300 hover:scale-105"
             />
             <ThemeToggle />
@@ -45,20 +42,17 @@ export const AuthWrapper: React.FC<AuthWrapperProps> = ({ children }) => {
             <div className="relative z-10">
               <div className="text-center mb-10">
                 <div className="inline-flex items-center justify-center w-28 h-28 mb-8 bg-gradient-to-br from-awe-teal/15 to-purple-500/10 dark:from-awe-teal/25 dark:to-purple-500/15 rounded-3xl premium-shadow glow-effect">
-                  <img 
-                    src={isDarkMode 
-                      ? "https://movar-reports.netlify.app/lovable-uploads/5d0a6ccd-eb16-4121-aef0-d583fe0bd181.png"
-                      : "https://movar.group/application/files/2517/0442/3523/Movar-Logo-2023-RGB.svg"
-                    }
-                    alt="Movar Logo" 
+                  <img
+                    src="/assets/awe-logo.svg"
+                    alt="AWE Logo"
                     className="w-18 h-18 object-contain"
                   />
                 </div>
                 <h1 className="movar-heading text-4xl mb-4 text-gray-900 dark:text-white">
-                  AI Assistant
+                  AWE Brain
                 </h1>
                 <p className="movar-subheading text-xl mb-10 leading-relaxed text-gray-700 dark:text-gray-300">
-                  Experience the future of intelligent conversation
+                  Together, delivering solutions for a safe and secure future
                 </p>
               </div>
 

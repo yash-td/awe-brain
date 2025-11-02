@@ -342,7 +342,7 @@ export const ChatProvider: React.FC<{ children: React.ReactNode }> = ({ children
 If the question has multiple parts, address each part thoroughly.`
               : `Provide a CLEAR and CONCISE answer using the provided documents. Be direct and to the point while still being helpful.`;
 
-            const enhancedContent = `You are answering a question using Movar's knowledge base. ${responseGuidance}
+            const enhancedContent = `You are answering a question using AWE's knowledge base. ${responseGuidance}
 
 IMPORTANT: Base your answer primarily on the provided context. If the context doesn't fully answer the question, supplement with your general knowledge but clearly indicate what's from the documents vs. general knowledge.
 

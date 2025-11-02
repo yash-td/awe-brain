@@ -39,3 +39,6 @@ Movar-Docs/
 # Scripts with sensitive keys
 scripts/vectorize-docs.js
 scripts/vectorization.log
+
+# Local Netlify folder
+.netlify

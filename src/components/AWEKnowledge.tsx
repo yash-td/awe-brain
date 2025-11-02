@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Search, Filter, FileText, Folder, X, Loader2, AlertCircle } from 'lucide-react';
 import { pineconeService, SearchResult } from '../services/pineconeService';
 
-export const MovarKnowledge: React.FC = () => {
+export const AWEKnowledge: React.FC = () => {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
@@ -11,20 +11,20 @@ export const MovarKnowledge: React.FC = () => {
   const [showFilters, setShowFilters] = useState(false);
   const [categories] = useState([
     'All Categories',
-    'Candidate CVs',
-    'CASA Training',
-    'Growth',
-    'Health, Safety and Well-being',
-    'Innovation',
-    'Job Descriptions',
+    'Technical Documentation',
+    'Safety Procedures',
+    'Security Protocols',
+    'Training Materials',
+    'Research & Development',
+    'Quality Assurance',
     'Knowledge Library',
     'Lessons Learned',
-    'Movar CVs',
-    'Movar Manuals and Handbooks',
-    'Movar Templates',
-    'Organisation Chart',
-    'Proposals and Bids',
-    'Training'
+    'Personnel Documentation',
+    'Manuals and Handbooks',
+    'Templates',
+    'Organization Charts',
+    'Technical Reports',
+    'Compliance & Regulatory'
   ]);
 
   const handleSearch = async (e: React.FormEvent) => {
@@ -96,10 +96,10 @@ export const MovarKnowledge: React.FC = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                Movar Knowledge Base
+                AWE Knowledge Base
               </h1>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Search across all company documents, templates, and resources
+                Search across all organizational documents, procedures, and resources
               </p>
             </div>
           </div>
@@ -220,24 +220,24 @@ export const MovarKnowledge: React.FC = () => {
                 <Search className="w-10 h-10 text-awe-teal" />
               </div>
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Search the Movar Knowledge Base
+                Search the AWE Knowledge Base
               </h2>
               <p className="text-gray-600 dark:text-gray-400 max-w-md mx-auto">
-                Find documents, CVs, templates, training materials, and more from across the organization
+                Find technical documentation, procedures, training materials, and more from across the organization
               </p>
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
                 <div className="bg-white dark:bg-awe-midnight-light rounded-lg p-4 border border-gray-200 dark:border-awe-midnight">
                   <FileText className="w-8 h-8 text-awe-teal mb-2" />
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Documents</h3>
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Documentation</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Company docs & templates
+                    Technical docs & procedures
                   </p>
                 </div>
                 <div className="bg-white dark:bg-awe-midnight-light rounded-lg p-4 border border-gray-200 dark:border-awe-midnight">
                   <Folder className="w-8 h-8 text-blue-600 mb-2" />
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Projects</h3>
+                  <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Safety & Security</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Case studies & proposals
+                    Protocols & standards
                   </p>
                 </div>
                 <div className="bg-white dark:bg-awe-midnight-light rounded-lg p-4 border border-gray-200 dark:border-awe-midnight">

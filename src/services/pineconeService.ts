@@ -142,24 +142,24 @@ class PineconeService {
   async getCategories(): Promise<string[]> {
     // Return predefined categories based on folder structure
     return [
-      'Candidate CVs',
-      'CASA Training',
-      'Entertainment',
-      'Growth',
-      'Health, Safety and Well-being',
-      'Innovation',
-      'Job Descriptions',
+      'Technical Documentation',
+      'Safety Procedures',
+      'Security Protocols',
+      'Training Materials',
+      'Research & Development',
+      'Quality Assurance',
+      'Project Documentation',
       'Knowledge Library',
       'Lessons Learned',
-      'Momentum Friday Meeting Videos',
-      'Movar CVs',
-      'Movar Manuals and Handbooks',
-      'Movar Templates',
-      'Organisation Chart',
-      'Proposals and Bids',
-      'Software',
-      'Training',
-      'Work Experience'
+      'Standards & Guidelines',
+      'Personnel Documentation',
+      'Manuals and Handbooks',
+      'Templates',
+      'Organization Charts',
+      'Technical Reports',
+      'Software Documentation',
+      'Compliance & Regulatory',
+      'Operational Procedures'
     ];
   }
 }
